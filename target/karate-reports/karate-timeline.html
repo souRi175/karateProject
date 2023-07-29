@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8"/>
     <title>Karate Timeline</title>
     <style>
       body, html { font-family: arial, sans-serif; font-size: 11pt; }
@@ -8,8 +9,8 @@
       .vis-item.failed { background-color: #F2928C; }
       .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="page-heading">
@@ -18,7 +19,7 @@
     <div id="visualization"></div>
     <script>
 var groups = [{"content":"main","id":1}];
-var items = [{"id":1,"group":1,"content":"src\/test\/java\/karateUiProject\/petstoretest[1:6]","start":1690400059603,"end":1690400059685,"title":"src\/test\/java\/karateUiProject\/petstoretest[1:6] 21:34:19.603-21:34:19.685 Get Pet by ID","className":"failed"}];
+var items = [{"id":1,"group":1,"content":"TestRunner\/petstoretest[1:6]","start":1690657490488,"end":1690657493522,"title":"TestRunner\/petstoretest[1:6] 21:04:50.488-21:04:53.522 Ajouter un nouvel animal"},{"id":2,"group":1,"content":"TestRunner\/petstoretest[2:12]","start":1690657493533,"end":1690657494296,"title":"TestRunner\/petstoretest[2:12] 21:04:53.533-21:04:54.296 Récupérer les informations dun animal par ID","className":"failed"},{"id":3,"group":1,"content":"TestRunner\/petstoretest[3:19]","start":1690657494308,"end":1690657495086,"title":"TestRunner\/petstoretest[3:19] 21:04:54.308-21:04:55.086 Rechercher des animaux par statut","className":"failed"},{"id":4,"group":1,"content":"TestRunner\/petstoretest[4:26]","start":1690657495094,"end":1690657495864,"title":"TestRunner\/petstoretest[4:26] 21:04:55.094-21:04:55.864 Supprimer un animal par ID","className":"failed"}];
 </script>
     <script>
       var container = document.getElementById('visualization');

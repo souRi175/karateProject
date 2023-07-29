@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner.TestRunner" time="7.598" tests="4" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.7+8-LTS-224"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\User\eclipse-workspace\karateUiProject"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\User\eclipse-workspace\karateUiProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\User\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12964310182738514149.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\bin;C:\Program Files (x86)\apache-maven-3.9.3\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\bin;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="User"/>
+    <property name="java.class.path" value="C:\Users\User\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\User\eclipse-workspace\karateUiProject\EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="m2e.build.project.data.socket.port" value="50564"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="[1:6] Ajouter un nouvel animal" classname="[TestRunner/petstoretest] Test de lAPI Petstore Swagger" time="3.035"/>
+  <testcase name="[2:12] Récupérer les informations dun animal par ID" classname="[TestRunner/petstoretest] Test de lAPI Petstore Swagger" time="0.769">
+    <error message="status code was: 404, expected: 200, response time in milliseconds: 744, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: &#10;{&quot;code&quot;:404,&quot;message&quot;:&quot;HTTP 404 Not Found&quot;}&#10;classpath:TestRunner/petstoretest.feature:16" type="com.intuit.karate.KarateException">com.intuit.karate.KarateException: 
+status code was: 404, expected: 200, response time in milliseconds: 744, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: 
+{"code":404,"message":"HTTP 404 Not Found"}
+classpath:TestRunner/petstoretest.feature:16
+</error>
+    <system-out><![CDATA[21:04:53.547 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+21:04:53.547 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+21:04:53.547 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100
+1 > Host: petstore3.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:04:53.547 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://petstore3.swagger.io:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+21:04:53.547 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}->https://petstore3.swagger.io:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+21:04:53.548 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://petstore3.swagger.io:443
+21:04:53.548 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to petstore3.swagger.io/3.212.18.82:443
+21:04:53.548 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to petstore3.swagger.io/3.212.18.82:443 with timeout 30000
+21:04:53.812 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+21:04:53.813 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+21:04:53.814 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+21:04:54.121 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+21:04:54.121 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+21:04:54.121 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+21:04:54.122 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.swagger.io
+21:04:54.122 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.swagger.io]
+21:04:54.122 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Amazon RSA 2048 M02, O=Amazon, C=US
+21:04:54.122 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.10:50567<->3.212.18.82:443
+21:04:54.123 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
+21:04:54.123 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/v3/pet/%7BpetId%7D/100 HTTP/1.1
+21:04:54.123 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+21:04:54.123 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+21:04:54.123 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> GET /api/v3/pet/%7BpetId%7D/100 HTTP/1.1
+21:04:54.124 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: petstore3.swagger.io
+21:04:54.124 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+21:04:54.124 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+21:04:54.124 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+21:04:54.124 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "GET /api/v3/pet/%7BpetId%7D/100 HTTP/1.1[\r][\n]"
+21:04:54.124 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: petstore3.swagger.io[\r][\n]"
+21:04:54.124 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+21:04:54.124 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)[\r][\n]"
+21:04:54.124 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21:04:54.124 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+21:04:54.287 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 404 Not Found[\r][\n]"
+21:04:54.287 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Sat, 29 Jul 2023 19:04:53 GMT[\r][\n]"
+21:04:54.288 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+21:04:54.288 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Length: 43[\r][\n]"
+21:04:54.288 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+21:04:54.288 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+21:04:54.288 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+21:04:54.289 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+21:04:54.289 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Access-Control-Expose-Headers: Content-Disposition[\r][\n]"
+21:04:54.289 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: Jetty(9.4.9.v20180320)[\r][\n]"
+21:04:54.289 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+21:04:54.290 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "{"code":404,"message":"HTTP 404 Not Found"}"
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 404 Not Found
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Sat, 29 Jul 2023 19:04:53 GMT
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Length: 43
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Access-Control-Allow-Origin: *
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Access-Control-Expose-Headers: Content-Disposition
+21:04:54.290 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Server: Jetty(9.4.9.v20180320)
+21:04:54.291 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+21:04:54.291 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {s}->https://petstore3.swagger.io:443] can be kept alive indefinitely
+21:04:54.291 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+21:04:54.291 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {s}->https://petstore3.swagger.io:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+21:04:54.292 [main] DEBUG com.intuit.karate - response time in milliseconds: 744
+1 < 404
+1 < Date: Sat, 29 Jul 2023 19:04:53 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Expose-Headers: Content-Disposition
+1 < Server: Jetty(9.4.9.v20180320)
+{"code":404,"message":"HTTP 404 Not Found"}
+
+21:04:54.297 [main] ERROR com.intuit.karate - classpath:TestRunner/petstoretest.feature:16
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 744, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: 
+{"code":404,"message":"HTTP 404 Not Found"}
+classpath:TestRunner/petstoretest.feature:16
+]]></system-out>
+  </testcase>
+  <testcase name="[3:19] Rechercher des animaux par statut" classname="[TestRunner/petstoretest] Test de lAPI Petstore Swagger" time="0.781">
+    <error message="match failed: CONTAINS&#10;  $ | actual does not contain expected | actual array does not contain expected item - {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;} (LIST:MAP)&#10;  [{&quot;id&quot;:99,&quot;category&quot;:{&quot;id&quot;:101,&quot;name&quot;:&quot;dogz&quot;},&quot;name&quot;:&quot;fido&quot;,&quot;photoUrls&quot;:[&quot;http://fido.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:102,&quot;name&quot;:&quot;friendly&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:123,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;pop&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:155,&quot;category&quot;:{&quot;id&quot;:117,&quot;name&quot;:&quot;Peagon&quot;},&quot;name&quot;:&quot;Bird&quot;,&quot;photoUrls&quot;:[&quot;https://samplephoto.com/5&quot;],&quot;tags&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;Bird_01&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:11,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:9223372036854567061,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Category1&quot;},&quot;name&quot;:&quot;Cat&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Tag2&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggihe&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:40,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;uff&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:374,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;CatUpdated&quot;},&quot;name&quot;:&quot;Pet374Updated&quot;,&quot;photoUrls&quot;:[&quot;www.url_updated.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1Updated&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:376,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;name&quot;:&quot;Pet376&quot;,&quot;photoUrls&quot;:[&quot;www.url.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:375,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;CatUpdated&quot;},&quot;name&quot;:&quot;Pet375Updated&quot;,&quot;photoUrls&quot;:[&quot;www.url_updated.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1Updated&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:377,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;name&quot;:&quot;Pet377&quot;,&quot;photoUrls&quot;:[&quot;www.url.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:10,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:12345,&quot;name&quot;:&quot;Fluffy&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;Pet1&quot;,&quot;photoUrls&quot;:[&quot;test1&quot;,&quot;test2&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;},{&quot;id&quot;:100,&quot;name&quot;:&quot;monAnimal&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;}]&#10;  {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[14] | not equal | actual has 3 more key(s) than expected - {&quot;id&quot;:100,&quot;photoUrls&quot;:[],&quot;tags&quot;:[]} (MAP:MAP)&#10;    {&quot;id&quot;:100,&quot;name&quot;:&quot;monAnimal&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[13] | not equal | actual has 3 more key(s) than expected - {&quot;id&quot;:1,&quot;photoUrls&quot;:[&quot;test1&quot;,&quot;test2&quot;],&quot;tags&quot;:[]} (MAP:MAP)&#10;    {&quot;id&quot;:1,&quot;name&quot;:&quot;Pet1&quot;,&quot;photoUrls&quot;:[&quot;test1&quot;,&quot;test2&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[12] | not equal | actual has 3 more key(s) than expected - {&quot;id&quot;:12345,&quot;photoUrls&quot;:[],&quot;tags&quot;:[]} (MAP:MAP)&#10;    {&quot;id&quot;:12345,&quot;name&quot;:&quot;Fluffy&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[11] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:10,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:10,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[10] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:377,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;photoUrls&quot;:[&quot;www.url.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:377,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;name&quot;:&quot;Pet377&quot;,&quot;photoUrls&quot;:[&quot;www.url.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[9] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:375,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;CatUpdated&quot;},&quot;photoUrls&quot;:[&quot;www.url_updated.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1Updated&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:375,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;CatUpdated&quot;},&quot;name&quot;:&quot;Pet375Updated&quot;,&quot;photoUrls&quot;:[&quot;www.url_updated.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1Updated&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[8] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:376,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;photoUrls&quot;:[&quot;www.url.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:376,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;name&quot;:&quot;Pet376&quot;,&quot;photoUrls&quot;:[&quot;www.url.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[7] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:374,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;CatUpdated&quot;},&quot;photoUrls&quot;:[&quot;www.url_updated.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1Updated&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:374,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;CatUpdated&quot;},&quot;name&quot;:&quot;Pet374Updated&quot;,&quot;photoUrls&quot;:[&quot;www.url_updated.com&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;tag1Updated&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[6] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:40,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:40,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;uff&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[5] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:15,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggihe&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[4] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:9223372036854567061,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Category1&quot;},&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Tag2&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:9223372036854567061,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Category1&quot;},&quot;name&quot;:&quot;Cat&quot;,&quot;photoUrls&quot;:[&quot;url1&quot;,&quot;url2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Tag1&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Tag2&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[3] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:11,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:11,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[2] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:155,&quot;category&quot;:{&quot;id&quot;:117,&quot;name&quot;:&quot;Peagon&quot;},&quot;photoUrls&quot;:[&quot;https:\/\/samplephoto.com\/5&quot;],&quot;tags&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;Bird_01&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:155,&quot;category&quot;:{&quot;id&quot;:117,&quot;name&quot;:&quot;Peagon&quot;},&quot;name&quot;:&quot;Bird&quot;,&quot;photoUrls&quot;:[&quot;https://samplephoto.com/5&quot;],&quot;tags&quot;:[{&quot;id&quot;:11,&quot;name&quot;:&quot;Bird_01&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[1] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:123,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:123,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dog&quot;},&quot;name&quot;:&quot;pop&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;    $[0] | not equal | actual has 4 more key(s) than expected - {&quot;id&quot;:99,&quot;category&quot;:{&quot;id&quot;:101,&quot;name&quot;:&quot;dogz&quot;},&quot;photoUrls&quot;:[&quot;http:\/\/fido.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:102,&quot;name&quot;:&quot;friendly&quot;}]} (MAP:MAP)&#10;    {&quot;id&quot;:99,&quot;category&quot;:{&quot;id&quot;:101,&quot;name&quot;:&quot;dogz&quot;},&quot;name&quot;:&quot;fido&quot;,&quot;photoUrls&quot;:[&quot;http://fido.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:102,&quot;name&quot;:&quot;friendly&quot;}],&quot;status&quot;:&quot;available&quot;}&#10;    {&quot;name&quot;:&quot;doggie&quot;,&quot;status&quot;:&quot;available&quot;}&#10;&#10;&#10;classpath:TestRunner/petstoretest.feature:24" type="com.intuit.karate.KarateException">com.intuit.karate.KarateException: 
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - {"name":"doggie","status":"available"} (LIST:MAP)
+  [{"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"},{"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"},{"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"},{"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"},{"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}]
+  {"name":"doggie","status":"available"}
+
+    $[14] | not equal | actual has 3 more key(s) than expected - {"id":100,"photoUrls":[],"tags":[]} (MAP:MAP)
+    {"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[13] | not equal | actual has 3 more key(s) than expected - {"id":1,"photoUrls":["test1","test2"],"tags":[]} (MAP:MAP)
+    {"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[12] | not equal | actual has 3 more key(s) than expected - {"id":12345,"photoUrls":[],"tags":[]} (MAP:MAP)
+    {"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[11] | not equal | actual has 4 more key(s) than expected - {"id":10,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[10] | not equal | actual has 4 more key(s) than expected - {"id":377,"category":{"id":1,"name":"Cat"},"photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}]} (MAP:MAP)
+    {"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[9] | not equal | actual has 4 more key(s) than expected - {"id":375,"category":{"id":1,"name":"CatUpdated"},"photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}]} (MAP:MAP)
+    {"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[8] | not equal | actual has 4 more key(s) than expected - {"id":376,"category":{"id":1,"name":"Cat"},"photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}]} (MAP:MAP)
+    {"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[7] | not equal | actual has 4 more key(s) than expected - {"id":374,"category":{"id":1,"name":"CatUpdated"},"photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}]} (MAP:MAP)
+    {"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[6] | not equal | actual has 4 more key(s) than expected - {"id":40,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[5] | not equal | actual has 4 more key(s) than expected - {"id":15,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[4] | not equal | actual has 4 more key(s) than expected - {"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}]} (MAP:MAP)
+    {"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[3] | not equal | actual has 4 more key(s) than expected - {"id":11,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[2] | not equal | actual has 4 more key(s) than expected - {"id":155,"category":{"id":117,"name":"Peagon"},"photoUrls":["https:\/\/samplephoto.com\/5"],"tags":[{"id":11,"name":"Bird_01"}]} (MAP:MAP)
+    {"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[1] | not equal | actual has 4 more key(s) than expected - {"id":123,"category":{"id":1,"name":"Dog"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[0] | not equal | actual has 4 more key(s) than expected - {"id":99,"category":{"id":101,"name":"dogz"},"photoUrls":["http:\/\/fido.jpg"],"tags":[{"id":102,"name":"friendly"}]} (MAP:MAP)
+    {"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+
+classpath:TestRunner/petstoretest.feature:24
+</error>
+    <system-out><![CDATA[21:04:54.311 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+21:04:54.316 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+21:04:54.316 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+21:04:54.316 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available
+1 > Host: petstore3.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:04:54.317 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://petstore3.swagger.io:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+21:04:54.317 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {s}->https://petstore3.swagger.io:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+21:04:54.317 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://petstore3.swagger.io:443
+21:04:54.317 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to petstore3.swagger.io/3.212.18.82:443
+21:04:54.317 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to petstore3.swagger.io/3.212.18.82:443 with timeout 30000
+21:04:54.632 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+21:04:54.632 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+21:04:54.632 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+21:04:54.843 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+21:04:54.844 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+21:04:54.844 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+21:04:54.844 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.swagger.io
+21:04:54.844 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.swagger.io]
+21:04:54.844 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Amazon RSA 2048 M02, O=Amazon, C=US
+21:04:54.845 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.10:50568<->3.212.18.82:443
+21:04:54.845 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 30000
+21:04:54.845 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/v3/pet/findByStatus?status=available HTTP/1.1
+21:04:54.845 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+21:04:54.845 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+21:04:54.845 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> GET /api/v3/pet/findByStatus?status=available HTTP/1.1
+21:04:54.845 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> Host: petstore3.swagger.io
+21:04:54.846 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
+21:04:54.846 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+21:04:54.846 [main] DEBUG org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+21:04:54.846 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "GET /api/v3/pet/findByStatus?status=available HTTP/1.1[\r][\n]"
+21:04:54.846 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "Host: petstore3.swagger.io[\r][\n]"
+21:04:54.846 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+21:04:54.846 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)[\r][\n]"
+21:04:54.846 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21:04:54.846 [main] DEBUG org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
+21:04:55.043 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Date: Sat, 29 Jul 2023 19:04:54 GMT[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Content-Length: 2039[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Access-Control-Expose-Headers: Content-Disposition[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "Server: Jetty(9.4.9.v20180320)[\r][\n]"
+21:04:55.044 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
+21:04:55.046 [main] DEBUG org.apache.http.wire - http-outgoing-2 << "[{"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"},{"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"},{"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"},{"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"},{"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}]"
+21:04:55.046 [main] DEBUG org.apache.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
+21:04:55.046 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Date: Sat, 29 Jul 2023 19:04:54 GMT
+21:04:55.046 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Content-Type: application/json
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Content-Length: 2039
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Connection: keep-alive
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Access-Control-Allow-Origin: *
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Access-Control-Expose-Headers: Content-Disposition
+21:04:55.047 [main] DEBUG org.apache.http.headers - http-outgoing-2 << Server: Jetty(9.4.9.v20180320)
+21:04:55.048 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+21:04:55.048 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {s}->https://petstore3.swagger.io:443] can be kept alive indefinitely
+21:04:55.048 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 0
+21:04:55.048 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {s}->https://petstore3.swagger.io:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+21:04:55.049 [main] DEBUG com.intuit.karate - response time in milliseconds: 731
+1 < 200
+1 < Date: Sat, 29 Jul 2023 19:04:54 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 2039
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Expose-Headers: Content-Disposition
+1 < Server: Jetty(9.4.9.v20180320)
+[{"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"},{"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"},{"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"},{"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"},{"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}]
+
+21:04:55.079 [main] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+21:04:55.087 [main] ERROR com.intuit.karate - classpath:TestRunner/petstoretest.feature:24
+And match response contains { name: 'doggie', status: 'available' }
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - {"name":"doggie","status":"available"} (LIST:MAP)
+  [{"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"},{"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"},{"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"},{"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"},{"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}]
+  {"name":"doggie","status":"available"}
+
+    $[14] | not equal | actual has 3 more key(s) than expected - {"id":100,"photoUrls":[],"tags":[]} (MAP:MAP)
+    {"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[13] | not equal | actual has 3 more key(s) than expected - {"id":1,"photoUrls":["test1","test2"],"tags":[]} (MAP:MAP)
+    {"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[12] | not equal | actual has 3 more key(s) than expected - {"id":12345,"photoUrls":[],"tags":[]} (MAP:MAP)
+    {"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[11] | not equal | actual has 4 more key(s) than expected - {"id":10,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[10] | not equal | actual has 4 more key(s) than expected - {"id":377,"category":{"id":1,"name":"Cat"},"photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}]} (MAP:MAP)
+    {"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[9] | not equal | actual has 4 more key(s) than expected - {"id":375,"category":{"id":1,"name":"CatUpdated"},"photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}]} (MAP:MAP)
+    {"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[8] | not equal | actual has 4 more key(s) than expected - {"id":376,"category":{"id":1,"name":"Cat"},"photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}]} (MAP:MAP)
+    {"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[7] | not equal | actual has 4 more key(s) than expected - {"id":374,"category":{"id":1,"name":"CatUpdated"},"photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}]} (MAP:MAP)
+    {"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[6] | not equal | actual has 4 more key(s) than expected - {"id":40,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[5] | not equal | actual has 4 more key(s) than expected - {"id":15,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[4] | not equal | actual has 4 more key(s) than expected - {"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}]} (MAP:MAP)
+    {"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[3] | not equal | actual has 4 more key(s) than expected - {"id":11,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[2] | not equal | actual has 4 more key(s) than expected - {"id":155,"category":{"id":117,"name":"Peagon"},"photoUrls":["https:\/\/samplephoto.com\/5"],"tags":[{"id":11,"name":"Bird_01"}]} (MAP:MAP)
+    {"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[1] | not equal | actual has 4 more key(s) than expected - {"id":123,"category":{"id":1,"name":"Dog"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[0] | not equal | actual has 4 more key(s) than expected - {"id":99,"category":{"id":101,"name":"dogz"},"photoUrls":["http:\/\/fido.jpg"],"tags":[{"id":102,"name":"friendly"}]} (MAP:MAP)
+    {"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+
+classpath:TestRunner/petstoretest.feature:24
+]]></system-out>
+  </testcase>
+  <testcase name="[4:26] Supprimer un animal par ID" classname="[TestRunner/petstoretest] Test de lAPI Petstore Swagger" time="0.772">
+    <error message="status code was: 404, expected: 200, response time in milliseconds: 765, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: &#10;{&quot;code&quot;:404,&quot;message&quot;:&quot;HTTP 404 Not Found&quot;}&#10;classpath:TestRunner/petstoretest.feature:30" type="com.intuit.karate.KarateException">com.intuit.karate.KarateException: 
+status code was: 404, expected: 200, response time in milliseconds: 765, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: 
+{"code":404,"message":"HTTP 404 Not Found"}
+classpath:TestRunner/petstoretest.feature:30
+</error>
+    <system-out><![CDATA[21:04:55.096 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+21:04:55.096 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+21:04:55.096 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100
+1 > Host: petstore3.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:04:55.096 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://petstore3.swagger.io:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+21:04:55.096 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {s}->https://petstore3.swagger.io:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+21:04:55.096 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://petstore3.swagger.io:443
+21:04:55.097 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to petstore3.swagger.io/3.212.18.82:443
+21:04:55.097 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to petstore3.swagger.io/3.212.18.82:443 with timeout 30000
+21:04:55.346 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+21:04:55.346 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+21:04:55.346 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+21:04:55.658 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+21:04:55.658 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+21:04:55.658 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+21:04:55.658 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.swagger.io
+21:04:55.658 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.swagger.io]
+21:04:55.658 [main] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=Amazon RSA 2048 M02, O=Amazon, C=US
+21:04:55.659 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.10:50569<->3.212.18.82:443
+21:04:55.659 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 30000
+21:04:55.659 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request DELETE /api/v3/pet/%7BpetId%7D/100 HTTP/1.1
+21:04:55.659 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+21:04:55.659 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+21:04:55.659 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> DELETE /api/v3/pet/%7BpetId%7D/100 HTTP/1.1
+21:04:55.659 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Host: petstore3.swagger.io
+21:04:55.659 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Connection: Keep-Alive
+21:04:55.659 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+21:04:55.659 [main] DEBUG org.apache.http.headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+21:04:55.660 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "DELETE /api/v3/pet/%7BpetId%7D/100 HTTP/1.1[\r][\n]"
+21:04:55.660 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Host: petstore3.swagger.io[\r][\n]"
+21:04:55.660 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+21:04:55.661 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)[\r][\n]"
+21:04:55.661 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21:04:55.661 [main] DEBUG org.apache.http.wire - http-outgoing-3 >> "[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "HTTP/1.1 404 Not Found[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Date: Sat, 29 Jul 2023 19:04:54 GMT[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Content-Type: application/json[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Content-Length: 43[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Connection: keep-alive[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Access-Control-Allow-Origin: *[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Access-Control-Allow-Methods: GET, POST, DELETE, PUT[\r][\n]"
+21:04:55.858 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Access-Control-Allow-Headers: Content-Type, api_key, Authorization[\r][\n]"
+21:04:55.859 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Access-Control-Expose-Headers: Content-Disposition[\r][\n]"
+21:04:55.859 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "Server: Jetty(9.4.9.v20180320)[\r][\n]"
+21:04:55.859 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "[\r][\n]"
+21:04:55.859 [main] DEBUG org.apache.http.wire - http-outgoing-3 << "{"code":404,"message":"HTTP 404 Not Found"}"
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << HTTP/1.1 404 Not Found
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Date: Sat, 29 Jul 2023 19:04:54 GMT
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Content-Type: application/json
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Content-Length: 43
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Connection: keep-alive
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Access-Control-Allow-Origin: *
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Access-Control-Expose-Headers: Content-Disposition
+21:04:55.860 [main] DEBUG org.apache.http.headers - http-outgoing-3 << Server: Jetty(9.4.9.v20180320)
+21:04:55.860 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+21:04:55.861 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 3][route: {s}->https://petstore3.swagger.io:443] can be kept alive indefinitely
+21:04:55.861 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 0
+21:04:55.861 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {s}->https://petstore3.swagger.io:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+21:04:55.861 [main] DEBUG com.intuit.karate - response time in milliseconds: 765
+1 < 404
+1 < Date: Sat, 29 Jul 2023 19:04:54 GMT
+1 < Content-Type: application/json
+1 < Content-Length: 43
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Access-Control-Expose-Headers: Content-Disposition
+1 < Server: Jetty(9.4.9.v20180320)
+{"code":404,"message":"HTTP 404 Not Found"}
+
+21:04:55.865 [main] ERROR com.intuit.karate - classpath:TestRunner/petstoretest.feature:30
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 765, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: 
+{"code":404,"message":"HTTP 404 Not Found"}
+classpath:TestRunner/petstoretest.feature:30
+]]></system-out>
+  </testcase>
+</testsuite>

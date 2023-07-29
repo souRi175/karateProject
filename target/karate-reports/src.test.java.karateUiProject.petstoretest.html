@@ -23,20 +23,29 @@
     </a>
     <div class="nav-count">
       <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-fail" class="bg-danger">4</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-07-26 09:34:19 PM</div>
+    <div>2023-07-29 01:51:54 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Get Pet by ID</span></a>
+            <a href="#[1:4]"><span>[1:4]</span> <span>Find pet by status</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:11]"><span>[2:11]</span> <span>Find pet by tags</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:18]"><span>[3:18]</span> <span>Create pet with parameters</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:25]"><span>[4:25]</span> <span>Get pet by ID</span></a>
           </div>
         </div>
       </div>
@@ -46,23 +55,23 @@
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
           <span class="feature-path">src/test/java/karateUiProject/petstoretest.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Testing Petstore API</span>
+          <span class="feature-name">Petstore API</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1:4]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Get Pet by ID</span>
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Find pet by status</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>66</span>
+              <span>ms:</span>&nbsp;<span>0</span>
             </div>
           </div>
           
@@ -72,14 +81,74 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref passed">7</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref failed">5</div>
       
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;http://petstore.swagger.io/v2/pet/{petId}&#39;</span>
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>the Swagger definition at http://petstore.swagger.io/v2/swagger.json</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:51:54.509 src/test/java/karateUiProject/petstoretest.feature:5
+Given the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+no step-definition method match found for: the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+src/test/java/karateUiProject/petstoretest.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref skipped">6</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>a request to findPetsByStatus is made</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref skipped">7</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>status is test</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -101,13 +170,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.8">
-      <div class="step-ref passed">8</div>
+      <div class="step-ref skipped">8</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path petId = 1</span>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>the request expects json</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -129,13 +198,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.9">
-      <div class="step-ref failed">9</div>
+      <div class="step-ref skipped">9</div>
       
-      <div class="step-cell failed">
-        <span>When</span>&nbsp;<span>method GET</span>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>a 200 response is returned within 500ms</span>
       </div>
     </div>
-    <div class="time-cell failed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -144,10 +213,56 @@
 
   
 
-  <div class="preformatted" data-parent="0.9">21:34:19.686 src/test/java/karateUiProject/petstoretest.feature:9
-When method GET
-java.net.URISyntaxException: Illegal character in path at index 34: http://petstore.swagger.io/v2/pet/{petId}
-src/test/java/karateUiProject/petstoretest.feature:9
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:11]</span>
+                <span class="scenario-name">Find pet by tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>the Swagger definition at http://petstore.swagger.io/v2/swagger.json</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">13:51:54.516 src/test/java/karateUiProject/petstoretest.feature:12
+Given the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+no step-definition method match found for: the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+src/test/java/karateUiProject/petstoretest.feature:12
 </div>   
 
   
@@ -160,11 +275,475 @@ src/test/java/karateUiProject/petstoretest.feature:9
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref skipped">10</div>
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
       
       <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>When</span>&nbsp;<span>a request to findPetsByTags is made</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>tags is test</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>the request expects json</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>a 200 response is returned within 500ms</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:18]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:18]</span>
+                <span class="scenario-name">Create pet with parameters</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>the Swagger definition at http://petstore.swagger.io/v2/swagger.json</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">13:51:54.521 src/test/java/karateUiProject/petstoretest.feature:19
+Given the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+no step-definition method match found for: the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+src/test/java/karateUiProject/petstoretest.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>a request to addPet is made</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>name is doggies</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>status is available</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>a 200 response is returned within 500ms</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:25]</span>
+                <span class="scenario-name">Get pet by ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>the Swagger definition at http://petstore.swagger.io/v2/swagger.json</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">13:51:54.526 src/test/java/karateUiProject/petstoretest.feature:26
+Given the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+no step-definition method match found for: the Swagger definition at http://petstore.swagger.io/v2/swagger.json
+src/test/java/karateUiProject/petstoretest.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>a request to getPetById is made</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>id is 1234</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>the request expects json</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>a 404 response is returned within 500ms</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>the response type is json</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>the response contains a Server header</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>

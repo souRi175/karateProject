@@ -1,0 +1,86 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 7.598 sec <<< FAILURE! - in TestRunner.TestRunner
+[2:12] Récupérer les informations dun animal par ID([TestRunner/petstoretest] Test de lAPI Petstore Swagger)  Time elapsed: 0.769 sec  <<< ERROR!
+com.intuit.karate.KarateException: 
+status code was: 404, expected: 200, response time in milliseconds: 744, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: 
+{"code":404,"message":"HTTP 404 Not Found"}
+classpath:TestRunner/petstoretest.feature:16
+
+[3:19] Rechercher des animaux par statut([TestRunner/petstoretest] Test de lAPI Petstore Swagger)  Time elapsed: 0.781 sec  <<< ERROR!
+com.intuit.karate.KarateException: 
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - {"name":"doggie","status":"available"} (LIST:MAP)
+  [{"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"},{"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"},{"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"},{"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"},{"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"},{"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"},{"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"},{"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}]
+  {"name":"doggie","status":"available"}
+
+    $[14] | not equal | actual has 3 more key(s) than expected - {"id":100,"photoUrls":[],"tags":[]} (MAP:MAP)
+    {"id":100,"name":"monAnimal","photoUrls":[],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[13] | not equal | actual has 3 more key(s) than expected - {"id":1,"photoUrls":["test1","test2"],"tags":[]} (MAP:MAP)
+    {"id":1,"name":"Pet1","photoUrls":["test1","test2"],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[12] | not equal | actual has 3 more key(s) than expected - {"id":12345,"photoUrls":[],"tags":[]} (MAP:MAP)
+    {"id":12345,"name":"Fluffy","photoUrls":[],"tags":[],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[11] | not equal | actual has 4 more key(s) than expected - {"id":10,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":10,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[10] | not equal | actual has 4 more key(s) than expected - {"id":377,"category":{"id":1,"name":"Cat"},"photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}]} (MAP:MAP)
+    {"id":377,"category":{"id":1,"name":"Cat"},"name":"Pet377","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[9] | not equal | actual has 4 more key(s) than expected - {"id":375,"category":{"id":1,"name":"CatUpdated"},"photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}]} (MAP:MAP)
+    {"id":375,"category":{"id":1,"name":"CatUpdated"},"name":"Pet375Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[8] | not equal | actual has 4 more key(s) than expected - {"id":376,"category":{"id":1,"name":"Cat"},"photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}]} (MAP:MAP)
+    {"id":376,"category":{"id":1,"name":"Cat"},"name":"Pet376","photoUrls":["www.url.com"],"tags":[{"id":1,"name":"tag1"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[7] | not equal | actual has 4 more key(s) than expected - {"id":374,"category":{"id":1,"name":"CatUpdated"},"photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}]} (MAP:MAP)
+    {"id":374,"category":{"id":1,"name":"CatUpdated"},"name":"Pet374Updated","photoUrls":["www.url_updated.com"],"tags":[{"id":1,"name":"tag1Updated"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[6] | not equal | actual has 4 more key(s) than expected - {"id":40,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":40,"category":{"id":1,"name":"Dogs"},"name":"uff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[5] | not equal | actual has 4 more key(s) than expected - {"id":15,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":15,"category":{"id":1,"name":"Dogs"},"name":"doggihe","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[4] | not equal | actual has 4 more key(s) than expected - {"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}]} (MAP:MAP)
+    {"id":9223372036854567061,"category":{"id":0,"name":"Category1"},"name":"Cat","photoUrls":["url1","url2"],"tags":[{"id":1,"name":"Tag1"},{"id":2,"name":"Tag2"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[3] | not equal | actual has 4 more key(s) than expected - {"id":11,"category":{"id":1,"name":"Dogs"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":11,"category":{"id":1,"name":"Dogs"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[2] | not equal | actual has 4 more key(s) than expected - {"id":155,"category":{"id":117,"name":"Peagon"},"photoUrls":["https:\/\/samplephoto.com\/5"],"tags":[{"id":11,"name":"Bird_01"}]} (MAP:MAP)
+    {"id":155,"category":{"id":117,"name":"Peagon"},"name":"Bird","photoUrls":["https://samplephoto.com/5"],"tags":[{"id":11,"name":"Bird_01"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[1] | not equal | actual has 4 more key(s) than expected - {"id":123,"category":{"id":1,"name":"Dog"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}]} (MAP:MAP)
+    {"id":123,"category":{"id":1,"name":"Dog"},"name":"pop","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+    $[0] | not equal | actual has 4 more key(s) than expected - {"id":99,"category":{"id":101,"name":"dogz"},"photoUrls":["http:\/\/fido.jpg"],"tags":[{"id":102,"name":"friendly"}]} (MAP:MAP)
+    {"id":99,"category":{"id":101,"name":"dogz"},"name":"fido","photoUrls":["http://fido.jpg"],"tags":[{"id":102,"name":"friendly"}],"status":"available"}
+    {"name":"doggie","status":"available"}
+
+
+classpath:TestRunner/petstoretest.feature:24
+
+[4:26] Supprimer un animal par ID([TestRunner/petstoretest] Test de lAPI Petstore Swagger)  Time elapsed: 0.772 sec  <<< ERROR!
+com.intuit.karate.KarateException: 
+status code was: 404, expected: 200, response time in milliseconds: 765, url: https://petstore3.swagger.io/api/v3/pet/%7BpetId%7D/100, response: 
+{"code":404,"message":"HTTP 404 Not Found"}
+classpath:TestRunner/petstoretest.feature:30
+
